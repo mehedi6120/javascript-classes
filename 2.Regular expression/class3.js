@@ -16,7 +16,7 @@ sehs e jodi $ sing thake tahole {} er por ar kono songkha nibena
 html tag match kora
 /<.+?>/g
 <p>hello world</p>
-
+? er mane holo hoito thakte pare othoba na o thakte pare as like {0,1}
 
 color match
 /#([0-9A-F]{3}){1,2}/i
