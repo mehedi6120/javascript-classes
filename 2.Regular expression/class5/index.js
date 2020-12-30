@@ -4,6 +4,7 @@ var rval = document.querySelector('.r');
 var gval = document.querySelector('.g');
 var bval = document.querySelector('.b');
 var final = document.querySelector('.final-result');
+var reset = document.querySelector('.reset');
 
     input.addEventListener('keypress', () => {
         warning.innerHTML = " ";
@@ -13,7 +14,7 @@ var final = document.querySelector('.final-result');
     
         if (v.length === 4 || v.length === 7) {
             var output = rex.exec(v);
-            console.log(output[2]);
+            console.log(output);
             if (output === null) {
                 warning.innerHTML = "Not a valid color Code";
             }
@@ -32,7 +33,17 @@ var final = document.querySelector('.final-result');
     
     });
 
-    
+reset.addEventListener('click', (e) => {
+    e.preventDefault;
+        input.value = null;
+    rval.innerHTML = '';
+    gval.innerHTML = '';
+    bval.innerHTML = '';
+    final.innerHTML = '';
+    document.body.style.backgroundColor = '';
+    warning.innerHTML = '';   
+        
+        })
 
 
 
