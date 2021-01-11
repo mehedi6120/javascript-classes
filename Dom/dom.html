@@ -22,7 +22,7 @@
         <p id="hello">hello <b>wolrd</b></p>
         <span>some other info</span>
     </div>
-    <div>
+    <div class = 'a'>
         <input  type="text" class="text form-control">
     </div>
     </div>
@@ -41,7 +41,104 @@
        var t = document.querySelector('.text');
 
         t.addEventListener('blur',(e)=>{console.log(e)});
-        
+        //class 3
+    var cont = document.querySelector('.a');
+    var newEl = document.createElement('div');
+   
+        cont.append = newEl;
+       //removeChild()
+
+       //class4
+
+     for(let i=0; i<10; i++){
+        var newEl = document.createElement('div');
+        newEl.innerHTML = `element ${i}`;
+        document.body.appendChild(newEl);
+     } 
+  var  divCol = document.querySelectorAll('div');
+  divCol.forEach(e=>e.style.color = '#f00');
+
+  //make this an array
+  var divArr = Array.prototype.slice.call(divCol);
+  console.log(divArr);
+
+
+  //class 6
+  //brower console e kora
+  /*
+  var a = {name : "mehedi",age:22}
+  undefined
+  JSON.stringify(a);//convert object to string
+  "{\"name\":\"mehedi\",\"age\":22}"
+  var b = JSON.stringify(a);
+  undefined
+  b
+  "{\"name\":\"mehedi\",\"age\":22}"
+  JSON.parse(b);//convert string to object
+  Object { name: "mehedi", age: 22 }*/
+
+
+  /*
+  localStorage.setItem("my_data","datavalue");
+undefined
+localStorage
+Storage { my_data: "datavalue", length: 1 }
+localStorage.removeItem("my_data")
+undefined
+localStorage.clear();
+undefined
+sessionStorage.setItem("my_data","session storage value dilam");
+undefined
+//storage e valu rakhbo
+undefined
+var a = {name: "Mehedi",age :21}
+undefined
+var b = JSON.stringify(a);
+undefined
+b
+"{\"name\":\"Mehedi\",\"age\":21}"
+localStorage.setItem('my_secret_data',b);
+undefined
+localStorage
+Storage { my_secret_data: "{\"name\":\"Mehedi\",\"age\":21}", length: 1 }
+
+localStorage.getItem('my_secret_data');
+"{\"name\":\"Mehedi\",\"age\":21}"
+//show the data
+undefined
+var c = localStorage.getItem('my_secret_data');
+undefined
+c
+"{\"name\":\"Mehedi\",\"age\":21}"
+c = JSON.stringify(c);
+"\"{\\\"name\\\":\\\"Mehedi\\\",\\\"age\\\":21}\""
+c
+"\"{\\\"name\\\":\\\"Mehedi\\\",\\\"age\\\":21}\""
+c = JSON.parse(c);
+"{\"name\":\"Mehedi\",\"age\":21}"
+c= JSON.parse(c);
+Object { name: "Mehedi", age: 21 }
+
+c
+Object { name: "Mehedi", age: 21 }
+*/
+
+
+/*
+//brower close kore dile sessionStorage claear hoye jay
+sessionStorage.setItem("my_data","you can forget it");
+undefined
+*/
+
+//class 7 
+/*async function(){
+ 
+}*/
+
+    //class 11 http
+
+    
+
 
     </script>
 
